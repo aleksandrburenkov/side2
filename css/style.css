@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond', serif;
+}
+
+header,
+footer {
+    background: #24e5e5;
+    background: -moz-linear-gradient(left, #24e5e5 1%, #ff91de 77%);
+    background: -webkit-linear-gradient(left, #24e5e5 1%, #ff91de 77%);
+    background: linear-gradient(to right, #24e5e5 1%, #ff91de 77%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#24e5e5', endColorstr='#ff91de', GradientType=1);
+
+}
+
+/* стилизуем header */
+#header {
+    height: 100px;
+}
+
+a.btn-header {
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+
+/* .bg-light {
+    background-color: inherit !important;
+} */
+
+@media(max-width: 990px) {
+    .navbar-nav {
+        background-color: rgba(95, 199, 231, 0.658);
+        margin-top: 45px;
+        font-weight: bold;
+        font-size: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row-header {
+        display: none;
+    }
+
+}
+
+/* стилизуем header */
+
+#Stories,
+#Features {
+    background-color: rgb(247, 240, 240);
+}
+
+/* фото история */
+.img-item {
+    height: 500px;
+}
+
+/* фото история */
+
+.cercle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* стилизуем features  */
+.wone {
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+
+}
+
+.two {
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+
+}
+
+.three {
+    border-bottom: 1px solid #333;
+}
+
+.four {
+    border-right: 1px solid #333;
+}
+
+.five {
+    border-right: 1px solid#333;
+}
+
+@media (max-width: 1200px) {
+    .two {
+        border-right: none;
+    }
+
+    .three {
+        border-left: none;
+        border-right: 1px solid#333;
+    }
+
+    .four {
+        border-bottom: 1px solid #333;
+        border-right: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .wone {
+        border-right: none;
+    }
+
+    .three {
+        border-right: none;
+    }
+
+    .five {
+        border-right: none;
+        border-bottom: 1px solid#333;
+    }
+
+    .six {
+        border-bottom: 1px solid #333;
+    }
+}
+
+/* стилизуем features  */
+/* Галерея */
+
+.card {
+
+    max-height: 350px;
+
+}
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+    transform: translateX(0);
+}
+
+/*Стилизуем при наведении на фото галереи */
+
+/*стрелки немного оттянули */
+.carousel-control-next,
+.carousel-control-prev {
+    width: 10%;
+    top: 25px;
+}
+.icon{
+    display: none;
+}
+#recipeCarousel:hover .icon{
+    display: flex;
+}
+.card-img-overlai-text {
+    color: white;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+}
+
+.btn-card {
+
+    position: absolute;
+    top: 250px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.5rem;
+
+}
+
+.btn-card>a {
+    color: white;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 0.5em;
+    text-decoration: none;
+}
+
+.card-img-overlay {
+    background-color: rgba(66, 61, 61, 0.774);
+    opacity: 0;
+    color: white;
+    font-size: 19px;
+    top: 0;
+
+}
+.card:hover .card-img-overlay {
+    opacity: 1;
+}
+
+.card-die {
+    display: none;
+   
+}
+
+.card:hover>.card-die {
+    display: block;
+}
+
+/* стилизуем footer */
+footer {
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 765px) {
+    .row-items {
+        flex: 0 0 auto;
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 20px 0;
+
+    }
+
+    h2 {
+        padding: 30px 0;
+    }
+
+}
+
+a.btn {
+    padding: 10px;
+}
+
+/* стилизуем footer */
